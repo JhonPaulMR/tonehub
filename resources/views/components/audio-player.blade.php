@@ -80,6 +80,7 @@
                 <div class="absolute right-0 top-0 h-full bg-background/50 pointer-events-none z-10 transition-all duration-75" :style="`width: ${100 - progress}%`"></div>
             </div>
         </div>
+
     </div>
 </div>
 @endif
