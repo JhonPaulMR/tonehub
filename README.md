@@ -6,7 +6,7 @@
 
 O **ToneHub** é uma plataforma web inspirada no [ToneHunt](https://www.tonehunt.org/), voltada para guitarristas e produtores musicais que desejam compartilhar e descobrir timbres. A aplicação permite que usuários façam upload de arquivos de preset/IR acompanhados de samples de áudio (Dry e Wet) para demonstração, além de categorizar por tipo de equipamento e tags.
 
-**Público-alvo:** Guitarristas, bassistas e produtores musicais que utilizam modeladores de amp (ToneX, Quad Cortex, Kemper, HX Stomp, NAM) e precisam de uma plataforma centralizada para trocar timbres.
+**Público-alvo:** Guitarristas, baixistas e produtores musicais que utilizam modeladores de amp (ToneX, Quad Cortex, Kemper, HX Stomp) e precisam de uma plataforma centralizada para trocar timbres.
 
 ### Funcionalidades
 
@@ -20,8 +20,8 @@ O **ToneHub** é uma plataforma web inspirada no [ToneHunt](https://www.tonehunt
 
 ### Print da tela principal
 
-<!-- TODO: Adicionar screenshot da home page após implementação -->
-> *Screenshot será adicionado após a conclusão da Sprint 5*
+![ToneHub Home](public/print-home.png)
+*(Recomendação: Substitua a imagem acima por um print real da aplicação rodando após finalizar)*
 
 ---
 
@@ -58,7 +58,10 @@ php artisan migrate --seed
 # 6. Crie o link simbólico para arquivos públicos
 php artisan storage:link
 
-# 7. Compile os assets (CSS/JS) e inicie o servidor
+# 7. Inicie o Worker de Filas (necessário para processar uploads de áudio em background)
+php artisan queue:work &
+
+# 8. Compile os assets (CSS/JS) e inicie o servidor
 npm run dev &
 php artisan serve
 ```
@@ -112,16 +115,16 @@ Este projeto aplica de forma prática os seguintes **7 módulos** do curso *Dese
 ### 📖 05 | Views com Blade
 Construção de todo o frontend usando a template engine **Blade**:
 - Layout base com `@extends` e `@yield` para reuso de estrutura
-- **Componentes reutilizáveis** customizados: `<x-item-card>` (card do preset na listagem), `<x-audio-player>` (player com toggle Dry/Wet), `<x-tag-badge>` (badges de tag) e `<x-flash-message>` (alertas)
+- **Componentes reutilizáveis** customizados: `<x-item-card>` (card na listagem), `<x-audio-player>` (player web audio), `<x-tag-badge>` (tags), e formulários (`<x-form.input>`, `<x-form.select>`, `<x-form.textarea>`).
 - Uso de **condicionais** (`@if`, `@auth`, `@guest`), **loops** (`@foreach`, `@forelse`) e **interpolação** (`{{ }}`)
 - Componentes com **parâmetros** (props) para passagem de dados dinâmicos
 
 ### 📖 06 | Estilização com TailwindCSS
 Estilização completa da aplicação com **TailwindCSS v4**:
-- Tema dark-mode personalizado com paleta de cores (fundo escuro + acentos em âmbar/laranja)
+- Tema dark-mode personalizado com paleta de cores "Sonic Obsidian" (fundo escuro `#131313` + acentos em púrpura/violeta `#d0bcff`)
 - Design responsivo com grid adaptativo (`grid-cols-1` até `xl:grid-cols-4`)
 - Cards com `hover` effects, gradientes em botões e transições suaves
-- Formulários estilizados com estados visuais de foco e erro
+- Formulários estilizados com estados visuais de foco e erro em dark mode
 
 ### 📖 07 | Validação de Requisições
 Validação robusta de dados de entrada com **Form Requests**:
