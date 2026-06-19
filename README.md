@@ -20,8 +20,31 @@ O **ToneHub** é uma plataforma web inspirada no [ToneHunt](https://www.tonehunt
 
 ### Print da tela principal
 
-![ToneHub Home](public/print-home.png)
-*(Recomendação: Substitua a imagem acima por um print real da aplicação rodando após finalizar)*
+- **Tela home**
+<img width="1905" height="940" alt="home" src="https://github.com/user-attachments/assets/36e9352d-17ab-4f4a-b623-72f88f8b9f5c" />
+
+- **Tela de Login e Registro**
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-37-28" src="https://github.com/user-attachments/assets/b2b19056-3e12-448f-bb7a-d19c747970d5" />
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-37-40" src="https://github.com/user-attachments/assets/a9163c3c-aba5-4296-ba43-4e78ecd8d65e" />
+
+- **Tela Biblioteca de Tones**
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-39-13" src="https://github.com/user-attachments/assets/91dd0da5-5cfe-4a0a-9f32-fdaf7274caa7" />
+
+- **Tela de Perfil Pública e Privada**
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-40-08" src="https://github.com/user-attachments/assets/8900ff89-de35-467e-84dd-794051821b24" />
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-40-27" src="https://github.com/user-attachments/assets/7e4e17cb-1111-457c-bb13-b65b606b5241" />
+
+- **Tela de Upload e Edição de Tone**
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-41-00" src="https://github.com/user-attachments/assets/9d8da6de-ab36-4faa-9aee-408555fee7b9" />
+
+- **Tela Resultado de Pesquisa**
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-41-44" src="https://github.com/user-attachments/assets/ecb7da7a-661a-4537-95b3-d26d950a1525" />
+
+- **Tela de Detalhes (Tones do usuário e de outros)**
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-48-02" src="https://github.com/user-attachments/assets/ed893eb3-f121-4b69-84df-6a40b12cdbe4" />
+<img width="1905" height="940" alt="Captura de tela de 2026-06-18 22-53-29" src="https://github.com/user-attachments/assets/2947dbaa-98a6-4769-97ca-528a0ba5f725" />
+
+
 
 ---
 
